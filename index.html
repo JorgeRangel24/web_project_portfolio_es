@@ -47,7 +47,13 @@
             <a class="presentacion__link" href="#">Descargar CV</a>
 
             <!-- Enlace al perfil de GitHub -->
-            <a class="presentacion__link" href="#">Enlace a GitHub</a>
+            <a
+              class="presentacion__link"
+              href="https://github.com/JorgeRangel24"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Enlace a GitHub</a
+            >
 
             <!-- Enlace a la sección de contacto -->
             <a class="presentacion__link" href="#contacto">Hablemos</a>
@@ -65,7 +71,9 @@
       <!-- Sección de habilidades y herramientas -->
       <section class="habilidades">
         <!-- Título de la sección -->
-        <h2 class="habilidades__title">Habilidades y herramientas</h2>
+        <h2 class="habilidades__title">
+          Habilidades <span>y herramientas</span>
+        </h2>
 
         <!-- Lista de habilidades y herramientas -->
         <ul class="habilidades__lista">
@@ -163,26 +171,52 @@
               </div>
             </div>
 
-            <!-- Título del proyecto -->
-            <h3 class="tarjeta-proyecto__title">Página web de una cafetería</h3>
+            <div class="tarjeta-proyecto__contenido">
+              <!-- Título del proyecto -->
+              <h3 class="tarjeta-proyecto__title">
+                Página web de una cafetería
+              </h3>
+              <!-- Descripción del proyecto de cafetería -->
+              <p class="tarjeta-proyecto__descripcion">
+                Desarrollo de una landing page responsiva para una cafetería
+                siguiendo un brief de diseño. Incluye estructura semántica,
+                maquetación con Flexbox, creación de secciones nuevas y un
+                formulario de contacto funcional.
+                <br />
+                Logro: Implementé desde cero el diseño completo de la página,
+                organicé el proyecto con buenas prácticas y publiqué la versión
+                final utilizando GitHub Pages.
+              </p>
+              <!-- Contenedor de enlaces del proyecto -->
+              <div class="tarjeta-proyecto__links">
+                <!-- Enlace a la página publicada de Triple Espresso -->
+                <a
+                  class="tarjeta-proyecto__link"
+                  href="https://jorgerangel24.github.io/web_project_coffeeshop_es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="tarjeta-proyecto__link-icono"
+                    src="./images/demo-en-vivo.svg"
+                    alt="Demo en vivo"
+                  />
+                </a>
 
-            <!-- Descripción del proyecto de cafetería -->
-            <p class="tarjeta-proyecto__descripcion">
-              Desarrollo de una landing page responsiva para una cafetería
-              siguiendo un brief de diseño. Incluye estructura semántica,
-              maquetación con Flexbox, creación de secciones nuevas y un
-              formulario de contacto funcional. Logro: Implementé desde cero el
-              diseño completo de la página, organicé el proyecto con buenas
-              prácticas y publiqué la versión final utilizando GitHub Pages.
-            </p>
-
-            <!-- Contenedor de enlaces del proyecto -->
-            <div class="tarjeta-proyecto__links">
-              <!-- Enlace a la página web publicada -->
-              <a class="tarjeta-proyecto__link" href="#"> Demo en vivo </a>
-
-              <!-- Enlace al repositorio de GitHub -->
-              <a class="tarjeta-proyecto__link" href="#"> GitHub </a>
+                <!-- Enlace al repositorio de GitHub de Triple Espresso -->
+                <a
+                  class="tarjeta-proyecto__link"
+                  href="https://github.com/JorgeRangel24/web_project_coffeeshop_es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="tarjeta-proyecto__link-icono"
+                    src="./images/github-link.svg"
+                    alt="GitHub"
+                  />
+                </a>
+              </div>
             </div>
           </article>
 
@@ -215,21 +249,33 @@
               </div>
             </div>
 
-            <!-- Título del proyecto -->
-            <h3 class="tarjeta-proyecto__title">Mi proyecto</h3>
+            <div class="tarjeta-proyecto__contenido">
+              <!-- Título del proyecto -->
+              <h3 class="tarjeta-proyecto__title">Mi proyecto</h3>
+              <!-- Descripción del proyecto -->
+              <p class="tarjeta-proyecto__descripcion">
+                Descripción del proyecto
+              </p>
+              <!-- Contenedor de enlaces del proyecto -->
+              <div class="tarjeta-proyecto__links">
+                <!-- Enlace a la página web publicada -->
+                <a class="tarjeta-proyecto__link" href="#">
+                  <img
+                    class="tarjeta-proyecto__link-icono"
+                    src="./images/demo-en-vivo.svg"
+                    alt="Demo en vivo"
+                  />
+                </a>
 
-            <!-- Descripción del proyecto -->
-            <p class="tarjeta-proyecto__descripcion">
-              Descripción del proyecto
-            </p>
-
-            <!-- Contenedor de enlaces del proyecto -->
-            <div class="tarjeta-proyecto__links">
-              <!-- Enlace a la página web publicada -->
-              <a class="tarjeta-proyecto__link" href="#"> Demo en vivo </a>
-
-              <!-- Enlace al repositorio de GitHub -->
-              <a class="tarjeta-proyecto__link" href="#"> GitHub </a>
+                <!-- Enlace al repositorio de GitHub -->
+                <a class="tarjeta-proyecto__link" href="#">
+                  <img
+                    class="tarjeta-proyecto__link-icono"
+                    src="./images/github-link.svg"
+                    alt="GitHub"
+                  />
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -242,8 +288,11 @@
       <h2 class="contacto__title">Contacto</h2>
 
       <!-- Enlace para enviar un correo electrónico -->
-      <a class="contacto__email" href="mailto:student@tripleten.com">
-        student@tripleten.com
+      <a
+        class="contacto__email"
+        href="mailto:jorgearangel.castillo24@gmail.com"
+      >
+        jorgearangel.castillo24@gmail.com
       </a>
 
       <!-- Lista de enlaces a redes sociales -->
@@ -256,6 +305,7 @@
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <!-- Ícono decorativo de LinkedIn -->
             <img
@@ -263,7 +313,6 @@
               src="./images/linkedin.svg"
               alt=""
             />
-            LinkedIn
           </a>
         </li>
 
@@ -275,6 +324,7 @@
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Facebook"
           >
             <!-- Ícono decorativo de Facebook -->
             <img
@@ -282,7 +332,6 @@
               src="./images/facebook.svg"
               alt=""
             />
-            Facebook
           </a>
         </li>
 
@@ -294,6 +343,7 @@
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram"
           >
             <!-- Ícono decorativo de Instagram -->
             <img
@@ -301,7 +351,6 @@
               src="./images/instagram.svg"
               alt=""
             />
-            Instagram
           </a>
         </li>
 
@@ -313,10 +362,10 @@
             href="https://x.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="X (Twitter)"
           >
             <!-- Ícono decorativo de X -->
             <img class="contacto__link-icon" src="./images/x.svg" alt="" />
-            X
           </a>
         </li>
       </ul>

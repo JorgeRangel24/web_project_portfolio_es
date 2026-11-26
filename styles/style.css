@@ -1,22 +1,22 @@
 /* Configuración general del modelo de caja */
-{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /* Fuente personalizada para los títulos del portafolio */
 @font-face {
-    font-family: "Archivo Black";
-    src: url(../fonts/ArchivoBlack-Regular.ttf) format("truetype");
-    font-style: normal;
-    font-weight: 400;
+  font-family: "Archivo Black";
+  src: url(../fonts/ArchivoBlack-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* Fuente variable para los textos del portafolio */
 @font-face {
-    font-family: "Open Sans";
-    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
-    font-style: normal;
-    font-weight: 300 800;
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300 800;
 }
 
 /* Variables globales del proyecto */
@@ -32,167 +32,606 @@
 
 /* Estilos generales del cuerpo de la página */
 body {
-    margin: 0;
-    background-color: var(--color-background);
-    color: var(--color-text);
-    font-family: "Open Sans", Arial, sans-serif;
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 /* Contenedor principal de la presentación */
 .presentacion {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 20px;
-    padding-top: 40px;
-    align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding-top: 40px;
+  align-items: flex-start;
 
-    /* Referencia para posicionar la elipse con resplandor */
-    position: relative;
+  /* Referencia para posicionar la elipse con resplandor */
+  position: relative;
 
-    /* Apilamiento independiente */
-    isolation: isolate;
+  /* Apilamiento independiente */
+  isolation: isolate;
 }
 
 /* Resplandor morado detrás de la fotografía */
 .presentacion::before {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 240px;
-    right: 87px;
-    border-radius: 50%;
-    background-color: var(--color-link);
-    filter: blur(200px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 240px;
+  right: 87px;
+  border-radius: 50%;
+  background-color: var(--color-link);
+  filter: blur(200px);
+  z-index: -1;
 }
 
 /* Contenedor del contenido textual */
 .presentacion__contenido {
-    max-width: 793px;
-    padding-top: 49px;
+  max-width: 793px;
+  padding-top: 49px;
 }
 
 /* Tipografía del nombre de la presentación */
 .presentacion__title {
-    font-family: "Archivo Black", Arial, sans-serif;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 78px;
-    letter-spacing: 0%;
-    margin: 0;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 78px;
+  letter-spacing: 0;
+  margin: 0;
 }
 
 /* Estilos del subtítulo profesional */
 .presentacion__subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    color: var(--color-text-secondary);
-    margin: 15px 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--color-text-secondary);
+  margin: 15px 0 0;
 }
 
 /* Estilos del párrafo descriptivo */
-.presentacion__description{
-    font-size: 18x;
-    font-weight: 400;
-    line-height: 25px;
-    margin: 30px 0 0;
+.presentacion__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 30px 0 0;
 }
 
 /* Distibución del contenedor de los enlaces */
 .presentacion__links {
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 /* Estilos de los enlaces de la presentación */
-.presentacion__links a{
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-text);
-    text-decoration: none;
+.presentacion__links a {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Estado hover de los enlaces de presentación */
+.presentacion__links a:hover {
+  color: var(--color-text-secondary);
 }
 
 /* Rectángulo decorativo de los enlaces */
 .presentacion__links a::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 5px;
-    margin-top: 5px;
-    background: var(--gradient-link);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  background: var(--gradient-link);
 }
 
 /* Dimensiones de la foto de perfil */
 .presentacion__foto {
-    width: 387px;
-    height: 500px;
-    object-fit: cover;
+  width: 387px;
+  height: 500px;
+  object-fit: cover;
 }
 
 /* Contenedor principal de habilidades y herramientas */
 .habilidades {
-    max-width: 1200px;
-    margin: 100px auto 0;
+  max-width: 1200px;
+  margin: 100px auto 0;
 }
 
 /* Título de habilidades y herramientas */
 .habilidades__title {
-    font-family: "Archivo Black", Arial, sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 44px;
-    letter-spacing: 0;
-    margin: 0;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  margin: 0;
 }
 
 /* Contenedor de la lista de habilidades y herramientas */
 .habilidades__lista {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 50px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 50px 0 0;
 }
 
 /* Dimensiones de los iconos de habilidades y herramientas */
 .habilidades__icono {
-    width: 50px;
-    height: 57px;
-    object-fit: contain;
-    display: block;
+  width: 50px;
+  height: 57px;
+  object-fit: contain;
+  display: block;
 }
 
 /* Contenedor principal de proyectos destacados */
 .proyectos {
-    max-width: 1200px;
-    margin: 100px auto 0;
+  max-width: 1200px;
+  margin: 100px auto 0;
+  position: relative;
+  z-index: 1;
 }
 
 /* Título de proyectos destacados */
 .proyectos__title {
-    font-family: "Archivo Black", Arial, sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 44px;
-    letter-spacing: 0;
-    margin: 0;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  margin: 0;
 }
 
 /* Contenedor de las tarjetas de proyectos destacados */
 .proyectos__lista {
-    display: flex;
-    gap: 20px;
-    margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
 }
 
 /* Dimensiones y fondo para cada tarjeta */
 .tarjeta-proyecto {
+  flex: 1;
+  min-width: 0;
+  background-color: #1c1c1c;
+  min-height: 670px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor de la imagen del proyecto */
+.tarjeta-proyecto__imagen-contenedor {
+  position: relative;
+  width: 100%;
+  height: 330px;
+}
+
+/* Imagen del proyecto */
+.tarjeta-proyecto__imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenedor de los iconos de las tecnologías */
+.tarjeta-proyecto__tecnologias {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+}
+
+/* Dimensiones de los iconos de las tecnologías */
+.tarjeta-proyecto__tecnologia-icono {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Contenedor del contenido textual de la tarjeta */
+.tarjeta-proyecto__contenido {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título individual de cada proyecto */
+.tarjeta-proyecto__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  margin: 0;
+}
+
+/* Descripción individual de cada proyecto */
+.tarjeta-proyecto__descripcion {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 20px 0 0;
+}
+
+/* Contenedor de los enlaces del proyecto */
+.tarjeta-proyecto__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+  padding-top: 30px;
+}
+
+/* Dimensiones de los recursos gráficos de los enlaces */
+.tarjeta-proyecto__link-icono {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+
+/* Transición de los enlaces de proyectos */
+.tarjeta-proyecto__link {
+  transition: opacity 0.3s ease;
+}
+
+/* Estado hover de los enlaces de proyectos */
+.tarjeta-proyecto__link:hover {
+  opacity: 0.5;
+}
+
+/* Contenedor principal de la sección de contacto */
+.contacto {
+  max-width: 1200px;
+  margin: 100px auto 0;
+  text-align: center;
+  padding-bottom: 100px;
+  position: relative;
+  isolation: isolate;
+}
+
+/* Resplandor morado detrás de la sección de contacto */
+.contacto::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: var(--color-link);
+  filter: blur(200px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Título de la sección de contacto */
+.contacto__title {
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+/* Estilos del enlace de correo electrónico */
+.contacto__email {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--color-link);
+  text-decoration: none;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+
+/* Estado hover del correo electrónico */
+.contacto__email:hover {
+  opacity: 0.5;
+}
+
+/* Contenedor de los enlaces a redes sociales */
+.contacto__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+}
+
+/* Dimensiones de los iconos de redes sociales */
+.contacto__link-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Transición de los enlaces a redes sociales */
+.contacto__link {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Estado hover de los enlaces a redes sociales */
+.contacto__link:hover {
+  opacity: 0.5;
+}
+
+/* Indicador de enfoque para la navegación con teclado */
+a:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 5px;
+}
+
+/* Adaptación del portafolio a pantallas medianas */
+@media screen and (max-width: 1279px) {
+  /* Márgenes laterales de la presentación */
+  .presentacion {
+    width: calc(100% - 80px);
+  }
+
+  /* Adaptación del contenedor de texto */
+  .presentacion__contenido {
     flex: 1;
     min-width: 0;
-    background-color: #1c1c1c;
+    padding-top: 0;
+  }
+
+  /* Dimensiones de la fotografía para tablet */
+  .presentacion__foto {
+    width: 216px;
+    height: 280px;
+    flex-shrink: 0;
+  }
+
+  /* Reubicación del resplandor morado */
+  .presentacion::before {
+    top: 40px;
+    right: 0;
+  }
+
+  /* Adaptación del título principal */
+  .presentacion__title {
+    font-size: 58px;
+    line-height: 63.5px;
+  }
+
+  /* Separación del subtítulo profesional */
+  .presentacion__subtitle {
+    margin-top: 14px;
+  }
+
+  /* Separación del párrafo descriptivo */
+  .presentacion__description {
+    margin-top: 20px;
+  }
+
+  /* Separación de los enlaces de presentación */
+  .presentacion__links {
+    margin-top: 20px;
+  }
+
+  /* Adaptación del contenedor de habilidades */
+  .habilidades {
+    width: calc(100% - 80px);
+    margin-top: 80px;
+  }
+
+  /* Separación entre el título y los iconos */
+  .habilidades__lista {
+    margin-top: 40px;
+  }
+
+  /* Adaptación del contenedor de proyectos */
+  .proyectos {
+    width: calc(100% - 80px);
+    margin-top: 80px;
+  }
+
+  /* Distribución vertical de las tarjetas */
+  .proyectos__lista {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  /* Altura adaptable al contenido de cada tarjeta */
+  .tarjeta-proyecto {
+    flex: none;
+    min-height: 0;
+  }
+
+  /* Adaptación del contenedor de contacto */
+  .contacto {
+    width: calc(100% - 80px);
+    margin-top: 80px;
+  }
+}
+
+/* Adaptación del portafolio a dispositivos móviles */
+@media screen and (max-width: 767px) {
+  /* Distribución vertical de la presentación */
+  .presentacion {
+    width: calc(100% - 40px);
+    padding-top: 20px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  /* Adaptación del contenedor de texto */
+  .presentacion__contenido {
+    width: 100%;
+  }
+
+  /* Fotografía cuadrada y adaptable */
+  .presentacion__foto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    align-self: center;
+  }
+
+  /* Centrado del resplandor morado */
+  .presentacion::before {
+    top: 10px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Adaptación del título principal */
+  .presentacion__title {
+    font-size: 36px;
+    line-height: 39px;
+  }
+
+  /* Adaptación del subtítulo profesional */
+  .presentacion__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+
+  /* Adaptación del párrafo descriptivo */
+  .presentacion__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* Distribución vertical de los enlaces */
+  .presentacion__links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  /* Adaptación del contenedor de habilidades */
+  .habilidades {
+    width: calc(100% - 40px);
+    margin-top: 60px;
+  }
+
+  /* Adaptación del título de habilidades */
+  .habilidades__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  /* Distribución de los iconos en cuatro columnas */
+  .habilidades__lista {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-top: 30px;
+  }
+
+  /* Reducción de las dimensiones de los iconos */
+  .habilidades__icono {
+    width: 30px;
+    height: auto;
+  }
+
+  /* Adaptación del contenedor de proyectos */
+  .proyectos {
+    width: calc(100% - 40px);
+    margin-top: 60px;
+  }
+
+  /* Adaptación del título de la sección */
+  .proyectos__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  /* Separación vertical entre las tarjetas */
+  .proyectos__lista {
+    gap: 10px;
+  }
+
+  /* Adaptación de la imagen del proyecto */
+  .tarjeta-proyecto__imagen-contenedor {
+    height: 160px;
+  }
+
+  /* Posición de los iconos de tecnologías */
+  .tarjeta-proyecto__tecnologias {
+    left: 10px;
+    gap: 5px;
+  }
+
+  /* Reducción de los iconos de tecnologías */
+  .tarjeta-proyecto__tecnologia-icono {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Espaciado interno de las tarjetas */
+  .tarjeta-proyecto__contenido {
+    padding: 20px;
+  }
+
+  /* Adaptación del título de cada proyecto */
+  .tarjeta-proyecto__title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  /* Adaptación de la descripción del proyecto */
+  .tarjeta-proyecto__descripcion {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+
+  /* Separación entre la descripción y los enlaces */
+  .tarjeta-proyecto__links {
+    padding-top: 20px;
+  }
+
+  /* Adaptación del contenedor de contacto */
+  .contacto {
+    width: calc(100% - 40px);
+    margin-top: 60px;
+  }
+
+  /* Adaptación del título de contacto */
+  .contacto__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  /* Reducción de la separación entre redes sociales */
+  .contacto__links {
+    gap: 40px;
+  }
+
+  /* Mantener juntas las palabras del título */
+  .habilidades__title span {
+    white-space: nowrap;
+  }
+
+  /* Adaptación de los enlaces de proyectos */
+  .tarjeta-proyecto__links {
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
 }
