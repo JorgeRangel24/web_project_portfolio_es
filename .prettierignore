@@ -1,0 +1,11 @@
+# Excluir los archivos internos de Git
+.git/
+
+# Excluir las imágenes y los iconos SVG
+images/
+
+# Excluir los archivos de tipografías
+fonts/
+
+# Excluir la hoja de estilos de normalización
+normalize.css

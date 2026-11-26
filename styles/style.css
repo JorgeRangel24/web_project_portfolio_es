@@ -84,6 +84,11 @@ body {
   margin: 0;
 }
 
+/* Mostrar el apellido en una línea independiente */
+.presentacion__apellido {
+  display: block;
+}
+
 /* Estilos del subtítulo profesional */
 .presentacion__subtitle {
   font-size: 18px;
@@ -263,6 +268,11 @@ body {
   font-weight: 400;
   line-height: 25px;
   margin: 20px 0 0;
+}
+
+/* Mostrar el logro del proyecto en una línea independiente */
+.tarjeta-proyecto__logro {
+  display: block;
 }
 
 /* Contenedor de los enlaces del proyecto */

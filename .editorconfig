@@ -1,0 +1,23 @@
+# Establecer este archivo como configuración principal
+root = true
+
+# Aplicar las reglas a todos los archivos
+[*]
+
+# Utilizar codificación UTF-8
+charset = utf-8
+
+# Utilizar espacios para la indentación
+indent_style = space
+
+# Utilizar dos espacios por nivel de indentación
+indent_size = 2
+
+# Utilizar saltos de línea LF
+end_of_line = lf
+
+# Insertar una línea final
+insert_final_newline = true
+
+# Eliminar espacios innecesarios al final de las líneas
+trim_trailing_whitespace = true
